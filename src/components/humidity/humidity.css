@@ -1,0 +1,10 @@
+.humidity {
+    width: 200px;
+    height: 140px;
+    padding: 10px;
+    margin: 10px;
+    color: black;
+    background: url(../../static/humidity.gif);
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}

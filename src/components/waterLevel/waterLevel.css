@@ -1,0 +1,12 @@
+.waterLevel {
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    height: 160px;
+    color: black;
+    background: url(../../static/water-level.gif);
+    background-size:160px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    border-radius: 15px;
+}

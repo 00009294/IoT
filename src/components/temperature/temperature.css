@@ -1,0 +1,12 @@
+.temperature {
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    color: black;
+    background: url(../../static/temperature.gif);
+    background-size: 170px;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    cursor: pointer;
+}

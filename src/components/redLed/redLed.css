@@ -1,0 +1,7 @@
+.redLed {
+    padding: 10px;
+    margin: 10px;
+    color: black;
+    background-color: rgb(251, 43, 20);
+    border-radius: 15px;
+}
