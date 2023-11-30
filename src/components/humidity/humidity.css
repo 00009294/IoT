@@ -1,10 +1,13 @@
 .humidity {
-    width: 200px;
-    height: 140px;
+    width: 300px;
+    height: 200px;
     padding: 10px;
     margin: 10px;
     color: black;
-    background: url(../../static/humidity.gif);
     background-repeat: no-repeat;
     border-radius: 15px;
+}
+.humidity h1{
+    font-size: 1.5em;
+    text-transform: uppercase;
 }

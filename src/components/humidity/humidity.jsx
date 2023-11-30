@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { useSpeechSynthesis } from 'react-speech-kit';
 import firebase from 'firebase/compat/app';
 import '../../firebase';
+import { CircularProgressbar } from 'react-circular-progressbar';
 
 
 const Humidity = () => {
@@ -34,7 +35,11 @@ const Humidity = () => {
 
   return (
     <div className="humidity">
-      <button onClick={handleSpeakButtonClick}><i class="fas fa-play"></i></button>
+      <button onClick={handleSpeakButtonClick}><i class="fa fa-play"></i></button>
+      <div className = "bar">
+        <CircularProgressbar value={hum} text={`${hum}%`} />
+      </div>
+      <h1>Humidity: {hum !== null ? hum.toString() : 'Loading...'}%</h1>
     </div>
   );
 };

@@ -25,17 +25,23 @@ const Feed = () => {
   }, []);
     
   const handleSpeakButtonClick = ()=>{
-    if(feed ==true){
-      speak({text: `Now, it is time feeding`})
+    if(feed === true){
+      speak({text: `It is time feeding`})
     } else {
-      speak({text: `Go out, no feeding today`})
+      speak({text: `No feeding today`})
     }
+  }
+
+  const toggleChangerClick = () =>{
+    const feedRef = firebase.database().ref('feed');
+    feedRef.set(!feed);
   }
 
   return (
     <div className="feed">
-      <button onClick={handleSpeakButtonClick}><i class="fas fa-play"></i></button>
-      <h1>Feed: {feed !== null ? feed.toString() : 'Loading...'}</h1>
+      <button onClick={handleSpeakButtonClick}><i class="fa fa-play"></i></button>
+      <button onClick={toggleChangerClick}><i class ="fa fa-refresh"></i></button>
+      <h1>Feed: {feed === true ? "ON" : 'OFF'}</h1>
     </div>
   );
 };

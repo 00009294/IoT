@@ -14,13 +14,15 @@ function App() {
         <Temperature />
         <Humidity />
         <WaterLevel />
+      </header>
+      <div className='body'>
+        <img src={logo} style={{width: 750, height: 350, borderRadius: 15,}} alt='....' />
+      </div>
+      <header className="App-header">
         <Feed />
         <GreenLed />
         <RedLed />
       </header>
-      <div className='body'>
-        <img src={logo} style={{width: 800, height: 400, borderRadius: 15,}} />
-      </div>
     </div>
   );
 }

@@ -32,7 +32,8 @@ const WaterLevel = () => {
 
   return (
     <div className="waterLevel">
-      <button onClick={handleSpeakButtonClick}><i class = "fas fa-play"></i></button>
+      <button onClick={handleSpeakButtonClick}><i class = "fa fa-play"></i></button>
+      <h1>Water: {waterLevel !== null ? waterLevel.toString() : 'Loading...'}% </h1>
     </div>
   );
 };
