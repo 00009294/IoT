@@ -23,7 +23,6 @@ const Temperature = () => {
 
     return()=>{
       tempRef.off('value', handleTemparature);
-      cancel();
     }
     }, []);
 

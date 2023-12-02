@@ -21,7 +21,6 @@ const RedLed = () => {
 
     return()=>{
       redLedRef.off('value', handleRedLed);
-      cancel();
     } 
     }, []);
 

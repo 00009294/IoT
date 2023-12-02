@@ -21,7 +21,6 @@ const GreenLed = () => {
 
     return()=>{
       greenLedRef.off('value', handleGreenLed);
-      cancel();
     }
   },[]);
 

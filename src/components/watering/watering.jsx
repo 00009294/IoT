@@ -21,7 +21,6 @@ const Watering = () => {
 
     return()=>{
       wateringRef.off('value', handlewatering);
-      cancel();
     } 
     }, []);
 
