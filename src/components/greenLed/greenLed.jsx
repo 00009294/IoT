@@ -26,7 +26,7 @@ const GreenLed = () => {
   },[]);
 
   const handleSpeakButtonClick = ()=>{
-    if(greenLed === true){
+    if(greenLed === 1){
       speak({text: 'The green led is turned on'})
     } else{
       speak({text: 'The green led is turned off'})
@@ -36,14 +36,14 @@ const GreenLed = () => {
   const toggleChangerClick = () => {
     // Toggle the value of redLed
     const greenLedRef = firebase.database().ref('greenLed');
-    greenLedRef.set(!greenLed);
+    greenLedRef.set(greenLed === 1 ? 0 : 1);
   };
 
   return (
     <div className="greenLed">
     <button onClick={handleSpeakButtonClick}><i class="fa fa-play"></i></button>
     <button onClick={toggleChangerClick}><i class="fa fa-refresh"></i></button>
-      <h1>GreenLed: {greenLed === true ? "ON" : 'OFF'}</h1>
+      <h1>GreenLed: {greenLed === 1 ? "ON" : 'OFF'}</h1>
     </div>
   );
 };
