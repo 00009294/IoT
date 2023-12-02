@@ -20,7 +20,6 @@ const Feed = () => {
     feedRef.on('value', handleFeed);
     return()=>{
       feedRef.off('value', handleFeed);
-      cancel();
     }
   }, []);
     

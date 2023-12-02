@@ -23,7 +23,6 @@ const Humidity = () => {
     // Clean up the listener when the component unmounts
     return () => {
       humRef.off('value', handleHumidityChange);
-      cancel();
     };
   }, []); // Empty dependency array means this effect runs once on mount
 
