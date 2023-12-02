@@ -1,0 +1,11 @@
+.App-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.body{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
