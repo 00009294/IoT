@@ -23,6 +23,7 @@ const Humidity = () => {
     // Clean up the listener when the component unmounts
     return () => {
       humRef.off('value', handleHumidityChange);
+      cancel();
     };
   }, []); // Empty dependency array means this effect runs once on mount
 
@@ -34,7 +35,7 @@ const Humidity = () => {
 
   return (
     <div className="humidity">
-      <button onClick={handleSpeakButtonClick}><i className="fa fa-play"></i></button>
+      <button onClick={handleSpeakButtonClick}><i class="fa fa-play"></i></button>
       <div className = "bar">
         <CircularProgressbar value={hum} text={`${hum}%`} />
       </div>

@@ -21,6 +21,7 @@ const GreenLed = () => {
 
     return()=>{
       greenLedRef.off('value', handleGreenLed);
+      cancel();
     }
   },[]);
 
@@ -40,8 +41,8 @@ const GreenLed = () => {
 
   return (
     <div className="greenLed">
-    <button onClick={handleSpeakButtonClick}><i className="fa fa-play"></i></button>
-    <button onClick={toggleChangerClick}><i className="fa fa-refresh"></i></button>
+    <button onClick={handleSpeakButtonClick}><i class="fa fa-play"></i></button>
+    <button onClick={toggleChangerClick}><i class="fa fa-refresh"></i></button>
       <h1>GreenLed: {greenLed === 1 ? "ON" : 'OFF'}</h1>
     </div>
   );

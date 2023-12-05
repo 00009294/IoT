@@ -6,14 +6,13 @@ import WaterLevel from './components/waterLevel/waterLevel'
 import Feed from './components/feed/feed';
 import GreenLed from './components/greenLed/greenLed';
 import RedLed from './components/redLed/redLed';
-import Watering from './components/watering/watering';
 import logo from './static/feeding.gif'
-
+import Watering from './components/watering/watering';
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <Temperature />
+        <Temperature />
         <Humidity />
         <WaterLevel />
       </header>

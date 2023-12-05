@@ -20,6 +20,7 @@ const WaterLevel = () => {
 
    return () => {
       waterLevelRef.off('value', handleWaterLevelChange);
+      cancel(); // Cancel any ongoing speech when the component unmounts
     };
   }, []); // Empty dependency array means this effect runs once on mount
 
@@ -31,7 +32,7 @@ const WaterLevel = () => {
 
   return (
     <div className="waterLevel">
-      <button onClick={handleSpeakButtonClick}><i className = "fa fa-play"></i></button>
+      <button onClick={handleSpeakButtonClick}><i class = "fa fa-play"></i></button>
       <h1>Water: {waterLevel !== null ? waterLevel.toString() : 'Loading...'}% </h1>
     </div>
   );

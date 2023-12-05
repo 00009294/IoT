@@ -23,6 +23,7 @@ const Temperature = () => {
 
     return()=>{
       tempRef.off('value', handleTemparature);
+      cancel();
     }
     }, []);
 
@@ -34,7 +35,7 @@ const Temperature = () => {
 
   return (
     <div className="temperature">
-      <button onClick={handleSpeakButtonClick}><i className="fa fa-play"></i></button>
+      <button onClick={handleSpeakButtonClick}><i class="fa fa-play"></i></button>
       <div className = "bar">
       <CircularProgressbar value={temp} text={`${temp}%`} />
       </div>
