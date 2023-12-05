@@ -5,9 +5,6 @@
   "homepage": "https://IoT.github.io/iot9294",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.0",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
     "firebase": "^10.7.0",
     "react": "^18.2.0",
     "react-circular-progressbar": "^2.1.0",
