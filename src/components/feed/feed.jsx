@@ -1,4 +1,3 @@
-// feederatureDisplay.js
 import '../feed/feed.css'
 import React, { useState, useEffect } from 'react';
 import { useSpeechSynthesis } from 'react-speech-kit';
@@ -21,6 +20,7 @@ const Feed = () => {
     return()=>{
       feedRef.off('value', handleFeed);
       cancel();
+
     }
   }, []);
     
