@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/iot9294/static/css/main.bb1be733.css",
+    "main.js": "/iot9294/static/js/main.342a6dfd.js",
+    "static/js/787.4c5cc191.chunk.js": "/iot9294/static/js/787.4c5cc191.chunk.js",
+    "static/media/feeding.gif": "/iot9294/static/media/feeding.ec22fab28290c091df32.gif",
+    "static/media/water-level.gif": "/iot9294/static/media/water-level.7ed2011d308df4585a56.gif",
+    "index.html": "/iot9294/index.html",
+    "main.bb1be733.css.map": "/iot9294/static/css/main.bb1be733.css.map",
+    "main.342a6dfd.js.map": "/iot9294/static/js/main.342a6dfd.js.map",
+    "787.4c5cc191.chunk.js.map": "/iot9294/static/js/787.4c5cc191.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bb1be733.css",
+    "static/js/main.342a6dfd.js"
+  ]
+}
