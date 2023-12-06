@@ -1,4 +1,5 @@
-# Link to deployed web application: https://00009294.github.io/IoT/
+# Link to deployed web application
+https://00009294.github.io/IoT/
 
 # Getting Started with Create React App
 
